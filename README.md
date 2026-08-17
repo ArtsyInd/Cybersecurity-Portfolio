@@ -1,2 +1,12 @@
 # Cybersecurity-Portfolio
-A portfolio to show my work while learning and exploring the domain of cybersecurity. I will update this as I go.
+Welcome to my cybersecurity portfolio. This repository documents my hands-on projects, labs, and security investigations completed while studying cybersecurity and building practical experience. I will update this as I go.
+
+## Areas Covered
+
+- Linux Security 
+
+## Skills
+
+- Linux
+- Bash
+- Python
