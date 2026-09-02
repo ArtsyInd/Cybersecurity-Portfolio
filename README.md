@@ -3,10 +3,12 @@ Welcome to my cybersecurity portfolio. This repository documents my hands-on pro
 
 ## Areas Covered
 
-- Linux Security 
+- Linux Security
+- Risk Assessment using NIST CSF
 
 ## Skills
 
 - Linux
 - Bash
 - Python
+- SQL
