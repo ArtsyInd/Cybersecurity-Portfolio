@@ -5,6 +5,7 @@ Welcome to my cybersecurity portfolio. This repository documents my hands-on pro
 
 - Linux Security
 - Risk Assessment using NIST CSF
+- Information Privacy 
 
 ## Skills
 
