@@ -7,7 +7,7 @@
 
 ---
 
-## Project Overview
+## Activity Overview
 
 This lab provided hands-on practice with basic cryptography and Linux command-line tools. I investigated an encrypted home directory, discovered a hidden file containing instructions, decoded a Caesar cipher, and used the recovered information to decrypt an AES-256-CBC encrypted file.
 
@@ -112,7 +112,7 @@ ls -a
 
 The `-a` option tells `ls` to display **all files**, including hidden files.
 
-In Linux, files whose names begin with a period (`.`) are treated as hidden files by default.
+(In Linux, files whose names begin with a period (`.`) are treated as hidden files by default.)
 
 The important file discovered was:
 
@@ -133,9 +133,7 @@ cat .leftShift3
 ### Result
 
 The file contained text that appeared scrambled. The message had been encrypted using a **Caesar cipher with a shift of three characters**.
-
 A Caesar cipher substitutes each alphabetic character with another character a fixed number of positions away in the alphabet.
-
 For a three-character left shift during decryption:
 
 ```text
@@ -245,9 +243,7 @@ openssl aes-256-cbc -pbkdf2 -a -d -in Q1.encrypted -out Q1.recovered -k ettubrut
 **AES** stands for Advanced Encryption Standard.
 
 `AES-256` indicates that the cipher uses a 256-bit key.
-
 `CBC` stands for **Cipher Block Chaining**, a block-cipher mode in which each plaintext block is combined with the previous ciphertext block before encryption.
-
 In this lab, OpenSSL was used to reverse the encryption because the required password was recovered from the decoded hidden file.
 
 ---
@@ -261,7 +257,6 @@ The command includes:
 ```
 
 PBKDF2 (**Password-Based Key Derivation Function 2**) strengthens password-based encryption by deriving a cryptographic key from a password through repeated computation.
-
 This makes password guessing more computationally expensive than using a password directly as an encryption key.
 
 ---
@@ -275,13 +270,11 @@ The command also contains:
 ```
 
 This tells OpenSSL to process the encrypted data using Base64 encoding/decoding.
-
 Base64 is an **encoding mechanism**, not encryption. It allows binary data to be represented as printable characters.
 
 ---
 
 # Verify the Recovered File
-
 After running the OpenSSL command, I listed the directory contents.
 
 ### Command
@@ -317,10 +310,8 @@ cat Q1.recovered
 ### Result
 
 The recovered message confirmed that the encrypted file had been successfully decrypted and that the Caesar cipher exercise had been completed.
-
 The lab output stated:
-
-> If you are able to read this, then you have successfully decrypted the classic cipher text. You recovered the encryption key that was used to encrypt this file. Great work!
+> If you are able to read this, then you have successfully decrypted the classic cipher text. You recovered the encryption key that was used to encrypt this file. Great  work!
 
 ---
 
@@ -473,14 +464,6 @@ Pipelines are useful for combining simple command-line utilities into efficient 
 
 ---
 
-# Why This Matters in Cybersecurity
-
-Encryption is an important security control for protecting sensitive information both at rest and in transit. Security analysts should understand common cryptographic concepts and be able to recognize how encryption, encoding, key derivation, and decryption tools are used during security operations.
-
-This lab also demonstrates practical Linux skills that are relevant to security analysis, including file discovery, hidden-file identification, command pipelines, and working with cryptographic utilities.
-
----
-
 # Tools Used
 
 | Tool | Purpose |
@@ -520,22 +503,9 @@ In this Linux cryptography lab, I investigated an encrypted file system by follo
 
 ## Lab Evidence
 
-Screenshots from the completed lab can be added below to demonstrate hands-on execution.
+<img width="940" height="239" alt="image" src="https://github.com/user-attachments/assets/603cd677-f34f-4b3f-86a6-eba7a32b0959" />
+<img width="940" height="699" alt="image" src="https://github.com/user-attachments/assets/91608519-e132-41c7-b17d-51f41c536e75" />
 
-### Discovering the Hidden File
 
-![Finding the hidden Caesar cipher file](screenshots/hidden-file.png)
-
-### Decrypting the Caesar Cipher
-
-![Decoding the Caesar cipher](screenshots/caesar-decryption.png)
-
-### Decrypting the AES-256 File
-
-![Decrypting Q1.encrypted](screenshots/openssl-decryption.png)
-
-### Reading the Recovered Data
-
-![Reading Q1.recovered](screenshots/recovered-file.png)
 
 > **Note:** Replace the image paths above with the actual screenshot filenames when adding your lab evidence to GitHub.
