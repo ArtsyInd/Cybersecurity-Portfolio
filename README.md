@@ -7,6 +7,7 @@ Welcome to my cybersecurity portfolio. This repository documents my hands-on pro
 - Risk Assessment using NIST CSF
 - Information Privacy
 - Access Control
+- Vulnerability Assessment
 
 ## Skills
 
