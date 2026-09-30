@@ -2,7 +2,7 @@
 
 ## Activity Overview
 
-This assessment applies the **Process of Attack Simulation and Threat Analysis (PASTA)** framework to evaluate the security risks associated with a proposed mobile application for sneaker buyers and sellers.
+This assessment applies the Process of Attack Simulation and Threat Analysis (PASTA) framework to evaluate the security risks associated with a proposed mobile application for sneaker buyers and sellers.
 
 The objective is to examine the application's business objectives, technical scope, potential threats, vulnerabilities, attack paths, and security controls before the application is launched.
 
@@ -32,7 +32,7 @@ The following business objectives have been identified from the application requ
 
 The application uses several technologies, including APIs, PKI, AES, RSA, SHA-256, and SQL.
 
-**SQL and the encryption technologies should receive particular security attention** because the application will store and access sensitive user and transaction information. Improperly secured SQL interactions could expose the application to attacks such as SQL injection. Similarly, weaknesses in encryption implementation could expose sensitive information, including passwords or payment-related data. Protecting these components is therefore important to maintaining the confidentiality and integrity of application data.
+SQL and the encryption technologies should receive particular security attention because the application will store and access sensitive user and transaction information. Improperly secured SQL interactions could expose the application to attacks such as SQL injection. Similarly, weaknesses in encryption implementation could expose sensitive information, including passwords or payment-related data. Protecting these components is therefore important to maintaining the confidentiality and integrity of application data.
 
 ---
 
